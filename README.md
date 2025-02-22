@@ -29,3 +29,8 @@ Functions
   - if you set the `is_new_training` parameter to `True`, API will train every time that called.
   - if you set the `is_new_training` parameter to `False`, API will load model from file what you trained before.
     - if trained model file does not exist, API will create new model and train model.
+- `/xor/gate-combination` API use following calculation:
+```
+A xor B = not((A and B) or (not(A or B)))
+```
+  - `not`, `and`, `or` means `/not`, `/and`, `/or` API
